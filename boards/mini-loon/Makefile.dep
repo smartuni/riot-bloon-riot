@@ -1,0 +1,5 @@
+ifneq (,$(filter esp32_ttgo_t_beam_v1_0,$(USEMODULE)))
+  USEMODULE += sx1272
+endif
+
+include $(RIOTBOARD)/common/esp32/Makefile.dep
